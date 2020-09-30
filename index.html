@@ -25,7 +25,27 @@
                 return false;
             }
         }
-
+        function yourAkanName() {
+            var dd = document.forms["akForm"]["days"].value;
+            var mm = document.forms["akForm"]["months"].value;
+            var y = document.forms["akForm"]["years"].value.toString();
+            var cc = parseInt(y.slice(0, 2));
+            var yy = parseInt(y.slice(2, 4));
+            var g = document.forms["akForm"]["gender"].value;
+            var d = Math.floor(Math.abs((((cc / 4) - 2 * cc - 1) + ((5 * yy / 4)) + ((26 * (mm + 1) / 10)) + dd) % 7));
+            var femaleNames = [" Akosua", " Adwoa", "Abenaa", "Akua", "Yaa", "Afua", " Ama"];
+            var maleNames = ["Kwasi", "Kwadwo", "Kwabena", "Kwaku", "Yaw", "Kofi", "Kwame"];
+            for (i = 0; i < maleNames.length; i++) {
+                if (d == i && g == "male") {
+                    return (document.getElementById("aka").innerHTML = "Your Akan name is " + maleNames[d] + "!");
+                }
+            }
+            for (i = 0; i < femaleNames.length; i++) {
+                if (d == i && g == "female") {
+                    return (document.getElementById("aka").innerHTML = "Your Akan name is " + femaleNames[d] + "!");
+                }
+            }
+        }
 
     </script>
 
@@ -65,7 +85,7 @@
             <br>
             <button type="submit" onclick="">Submit</button>
         </form>
-        </form>
+<h1 id="aka"></h1>
     </div>
 
 </body>
