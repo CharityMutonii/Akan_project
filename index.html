@@ -10,8 +10,8 @@
 <body>
     <div class="container">
         <h1>Akan Application</h1>
-        <p>a web application that takes a user's birthday and calculates the day 
-            of the week they were born and then depending on their gender outputs 
+        <p>a web application that takes a user's birthday and calculates the day
+            of the week they were born and then depending on their gender outputs
             their Akan Name.<br>
 
             Akan names are derived from Ghanian culture.<br><br>
@@ -22,6 +22,25 @@
             Thursday: Yaw, Friday: Kofi, Saturday: Kwame <br><br>
             <strong>TIme to get your akan name!!</strong>
         </p>
+
+        <form action="">
+            <strong>Fill in your Birthday:</strong><br>
+            <label for="">Day:</label>
+            <input type="number" name="days" placeholder="Enter your day of birth"><br><br>
+            <label for="">Month:</label>
+            <input type="number" name="months" placeholder="Enter your month of birth"><br><br>
+            <label for="">Year:</label>
+            <input type="number" name="years" min="1" max="2020" placeholder="Enter your year of birth"><br><br>
+
+            <strong>Gender:</strong>
+            <select name="gender">
+                <option value="male">male</option>
+                <option value="female">female</option>
+            </select><br>
+            <br>
+            <button type="submit" onclick="">Submit</button>
+        </form>
+        </form>
     </div>
 
 </body>
