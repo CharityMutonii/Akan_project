@@ -5,20 +5,23 @@ Akan Name project is web application which allows user input his or her birthday
 
 
 ### Authors
-* **Charity Mutoni** 
+***Charity Mutoni** 
 
 ### Project setup instructions
  1.You must have a github account
  2.Fork the project on your local computer 
  3.You will be able to view the project
+ 4.Edit the codes according to your preferences
  
 ### Technologies
 1.Html
 2.Css
 3.Javascript 
+
 ### Contact Information  
 Email:charitytoni0@gmail.com
 Tel:0783009867
+
 ### Github live pages
 
 ### License 
