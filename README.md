@@ -25,7 +25,7 @@ Tel:0783009867
 ### Github live pages
  https://charitymutonii.github.io/Akan_project/.
 ### License 
-This project is license  by MIT for more information visit LICENSE.md
+This project is license  by MIT for more information visit [LICENSE.md]
 ### copyright information
 Copyright (c) 2020 CharityMutonii
 
