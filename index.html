@@ -5,6 +5,31 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Akan Application</title>
+    <script>
+        function validInput() {
+            var d = document.forms["akForm"]["days"].value;
+            var m = document.forms["akForm"]["months"].value;
+            var y = document.forms["akForm"]["years"].value;
+            if ((d == null || d == "") && (m == null || m == "") && (y == null || y == "")) {
+                alert("please complete the form!!");
+            }
+            else if (d <= 0 || d > 31) {
+                alert("The day you entered is invalid");
+
+            }
+            else if (m <= 0 || m > 12) {
+                alert("The month you entered is invalid");
+
+            }
+            else {
+                return false;
+            }
+        }
+
+
+    </script>
+
+
 </head>
 
 <body>
@@ -23,8 +48,8 @@
             <strong>TIme to get your akan name!!</strong>
         </p>
 
-        <form action="">
-            <strong>Fill in your Birthday:</strong><br>
+        <form name="akForm" action="" onsubmit="return validInput()">
+            <strong>Fill in your Birthday:</strong><br><br>
             <label for="">Day:</label>
             <input type="number" name="days" placeholder="Enter your day of birth"><br><br>
             <label for="">Month:</label>
