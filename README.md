@@ -17,6 +17,7 @@ Akan Name project is web application which allows user input his or her birthday
 1.Html
 2.Css
 3.Javascript 
+4.Bootstrap framework
 
 ### Contact Information  
 Email:charitytoni0@gmail.com
