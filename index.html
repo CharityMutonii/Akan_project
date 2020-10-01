@@ -5,6 +5,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Akan Application</title>
+    <link href="bootstrap.css" rel="stylesheet" type="text/css">
+    <link href="styles.css" rel="stylesheet" type="text/css">
     <script>
         function validInput() {
             var d = document.forms["akForm"]["days"].value;
@@ -54,39 +56,55 @@
 
 <body>
     <div class="container">
-        <h1>Akan Application</h1>
-        <p>a web application that takes a user's birthday and calculates the day
-            of the week they were born and then depending on their gender outputs
-            their Akan Name.<br>
+        <div class="row">
+            <div class="col-md-5">
+                <div class="jumbotron">
+                    <h1>Akan Application</h1>
+                    <p>This is a web application that takes a user's birthday and calculates the day
+                        of the week they were born and then depending on their gender outputs
+                        their Akan Name.<br>
 
-            Akan names are derived from Ghanian culture.<br><br>
+                        Akan names are derived from Ghanian culture.<br><br>
 
-            <strong>Girls Akan Names:</strong>Sunday: Akosua, Monday: Adwoa, Tuesday: Abenaa, Wednesday: Akua, <br>
-            Thursday: Yaa, Friday: Afu, Saturday: Ama <br><br>
-            <strong>Boys Akan Names:</strong>Sunday: Kwas, Monday: Kwadwo, Tuesday: Kwabena, Wednesday: Kwaku <br>
-            Thursday: Yaw, Friday: Kofi, Saturday: Kwame <br><br>
-            <strong>TIme to get your akan name!!</strong>
-        </p>
+                        <strong>Girls Akan Names:</strong>Sunday: Akosua, Monday: Adwoa, Tuesday: Abenaa, Wednesday:
+                        Akua,
+                        <br>
+                        Thursday: Yaa, Friday: Afu, Saturday: Ama <br><br>
+                        <strong>Boys Akan Names:</strong>Sunday: Kwas, Monday: Kwadwo, Tuesday: Kwabena, Wednesday:
+                        Kwaku
+                        <br>
+                        Thursday: Yaw, Friday: Kofi, Saturday: Kwame <br><br>
+                        <strong>Time to get your akan name!!</strong>
+                    </p>
+                </div>
+            </div>
+            <div class="col-md-7">
 
-        <form name="akForm" action="" onsubmit="return validInput()">
-            <strong>Fill in your Birthday:</strong><br><br>
-            <label for="">Day:</label>
-            <input type="number" name="days" placeholder="Enter your day of birth"><br><br>
-            <label for="">Month:</label>
-            <input type="number" name="months" placeholder="Enter your month of birth"><br><br>
-            <label for="">Year:</label>
-            <input type="number" name="years" min="1" max="2020" placeholder="Enter your year of birth"><br><br>
+                <form class="for" name="akForm" action="" onsubmit="return validInput()">
+                    <strong>Fill in your Birthday:</strong><br><br>
+                    <label for="">Day:</label>
+                    <input type="number" name="days"><br><br>
+                    <label for="">Month:</label>
+                    <input type="number" name="months"><br><br>
+                    <label for="">Year:</label>
+                    <input type="number" name="years" min="1" max="2020"><br><br>
+                    <strong>Gender:</strong>
+                    <select name="gender">
+                        <option value="male">male</option>
+                        <option value="female">female</option>
+                    </select><br>
+                    <br>
+                    <button type="submit" class="btn btn-primary" onclick="return yourAkanName()">Submit</button>
+                    <button type="reset" class="btn btn-secondary">clear the form</button>
+                </form>
+                <h1 id="aka"></h1>
 
-            <strong>Gender:</strong>
-            <select name="gender">
-                <option value="male">male</option>
-                <option value="female">female</option>
-            </select><br>
-            <br>
-            <button type="submit" onclick="">Submit</button>
-        </form>
-<h1 id="aka"></h1>
+            </div>
+        </div>
     </div>
+    <footer>
+        <p>copyright@2020 Akan</p>
+    </footer>
 
 </body>
 
